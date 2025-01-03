@@ -27,7 +27,7 @@ The pipeline includes:
 4. **Classification**: CNN-based model for detection.
 5. **Real-Time Predictions**: Outputs results in under 2-3 seconds.
 
-![System Architecture](investor2.jpg)
+![System Architecture](https://github.com/ChanduPT/FakeTweetDetection/blob/main/DeepApp/static/images/investor2.jpg)
 
 ---
 
@@ -48,14 +48,6 @@ The pipeline includes:
 
 ---
 
-## System Flow
-
-![Data Flow Diagram](path/to/data-flow-diagram)
-
----
-
-
-
 ## Usage
 1. Start the server by running `run.bat`.
 2. Navigate to `http://127.0.0.1:8000/index.html` in a browser.
@@ -64,18 +56,10 @@ The pipeline includes:
 
 ---
 
-## Screenshots
-1. **Homepage**:
-   ![Homepage](path/to/homepage-screenshot)
-2. **Result Page**:
-   ![Result Page](path/to/result-page-screenshot)
-
----
 
 ## Future Work
 - Incorporate advanced models like BERT or RoBERTa.
 - Expand detection capabilities to other social media platforms.
 - Utilize quantum NLP for enhanced detection accuracy.
-- 
 ---
 
