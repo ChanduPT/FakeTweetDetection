@@ -71,7 +71,7 @@ if os.path.exists("model/X.npy"):
     X = np.load("model/X.npy")
     Y = np.load("model/Y.npy")
 else:
-    dataset = pd.read_csv("/Users/chanduprasadreddypotukanuma/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv", sep=";")
+    dataset = pd.read_csv("/Users/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv", sep=";")
     dataset = dataset.dropna()
     # print(np.unique(dataset['account.type'], return_counts=True))
     # print(dataset)
@@ -175,7 +175,7 @@ calculateMetrics("Extension Hybrid CNN", predict, y_test)  # call function to ca
 
 def LoadDataset(request):
     if request.method == 'GET':
-        dataset = pd.read_csv("/Users/chanduprasadreddypotukanuma/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv", sep=";")
+        dataset = pd.read_csv("/Users/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv", sep=";")
         # logger.info(f"Dataset shape: {dataset.shape}")
         dataset = dataset.dropna()
         dataset = dataset.values
@@ -313,7 +313,7 @@ def SubmitFeedback(request):
 
         """
         # Load existing dataset and check for duplicates
-        dataset_path = '/Users/chanduprasadreddypotukanuma/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv'
+        dataset_path = '/Users/Downloads/DeepFake2/Dataset/combined_tweepfake_gpt4_dataset.csv'
         try:
             existing_data = pd.read_csv(dataset_path, sep=';')
         except Exception as e:
@@ -325,11 +325,12 @@ def SubmitFeedback(request):
             return redirect('DetectFake')
         """
 
+        # use either of the approaches 
         # Map feedback to dataset columns
         account_type = "human" if category.lower() == "human" else "bot"
         class_type = "human" if category.lower() == "human" else source
 
-        dataset_path = '/Users/chanduprasadreddypotukanuma/Downloads/DeepFake2/Dataset/feedback.csv'
+        dataset_path = '/Users/Downloads/DeepFake2/Dataset/feedback.csv'
 
         # Append feedback to the dataset
         try:
