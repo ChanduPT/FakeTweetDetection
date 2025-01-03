@@ -27,7 +27,7 @@ The pipeline includes:
 4. **Classification**: CNN-based model for detection.
 5. **Real-Time Predictions**: Outputs results in under 2-3 seconds.
 
-![System Architecture](path/to/system-architecture-image)
+![System Architecture](investor2.jpg)
 
 ---
 
